@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: task-tracker-auth-service
+  profiles:
+    active: ${PROFILES_ACTIVE:dev}
+
+token:
+  issuer: task-tracker-auth-service
+  key-id: task-tracker-auth-service-key
+  access-token-ttl: 15m
+  refresh-token-ttl: 7d
+  algorithm: ${ALGORITHM}
+  signature-algorithm: ${SIGNATURE_ALGORITHM}
+  private-key: ${PRIVATE_KEY}
+  public-key: ${PUBLIC_KEY}

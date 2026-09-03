@@ -1,0 +1,29 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+server:
+  port: 8081
+
+stub:
+  users:
+    '[stubuser1@stub.user]':
+      id: 1
+      email: 'stubuser1@stub.user'
+      password: 'stubUser1!'
+
+    '[stubuser2@stub.user]':
+      id: 2
+      email: 'stubuser2@stub.user'
+      password: 'stubUser2!'
+
+    '[stubuser3@stub.user]':
+      id: 3
+      email: 'stubuser3@stub.user'
+      password: 'stubUser3!'
+
+    '[stubuser4@stub.user]':
+      id: 4
+      email: 'stubuser4@stub.user'
+      password: 'stubUser4!'
